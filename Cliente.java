@@ -22,10 +22,14 @@ public class Cliente {
   public int getNumeroDeContacto () { return this.numeroDeContacto; }
   public int getNumeroDeDocumento () { return this.numeroDeDocumento; }
 
+  /*=====
+    NOTE:
+    Los setters del cliente no son necesarios en el programa
+  *=====*/
   // Setters
-  public void setNombres ( String newValue ) { this.nombres = newValue; }
-  public void setApellidos ( String newValue ) { this.apellidos = newValue; }
-  public void setDireccionDeResidencia ( String newValue ) { this.direccionDeResidencia = newValue; }
-  public void setNumeroDeContacto ( int newValue ) { this.numeroDeContacto = newValue; }
-  public void setNumeroDeDocumento ( int newValue ) { this.numeroDeDocumento = newValue; }
+  private void setNombres ( String newValue ) { this.nombres = newValue; }
+  private void setApellidos ( String newValue ) { this.apellidos = newValue; }
+  private void setDireccionDeResidencia ( String newValue ) { this.direccionDeResidencia = newValue; }
+  private void setNumeroDeContacto ( int newValue ) { this.numeroDeContacto = newValue; }
+  private void setNumeroDeDocumento ( int newValue ) { this.numeroDeDocumento = newValue; }
 }

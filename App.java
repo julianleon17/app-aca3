@@ -134,6 +134,14 @@ public class App {
             } else {
               Alquiler alquiler = new Alquiler( numeroDocumentoCliente, placaAutomovil, fechaInicial, Integer.parseInt( diasParaAlquilar ) );
               alquileresList.add( alquiler );
+
+              // Marcar automovil como alquilado
+              for ( Automovil automovil : automovilesList ) {
+                if ( automovil.getPlaca().toLowerCase().equals( placaAutomovil.toLowerCase() ) ) {
+                  automovil.setEstado( "alquilado" );
+                }
+              }
+
               System.out.println( "Alquiler created successfully!" );
             }
           } else {
